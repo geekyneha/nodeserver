@@ -2,7 +2,8 @@
 const fs=require('fs');
 const http=require('http');
 
-const PORT=3005;
+require('dotenv').config();
+const PORT=process.env.PORT
 
 
 const server=http.createServer((req,res)=>{
